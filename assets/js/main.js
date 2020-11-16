@@ -37,3 +37,7 @@ genera.addEventListener("click", function(){
     var cp = Math.random() * (100000 - 90000) + 90000;
     document.getElementById("codiceCp").innerHTML = cp.toFixed(0);
 })
+
+annulla.addEventListener("click", function(){
+    biglietto.style.display = "none";
+})
