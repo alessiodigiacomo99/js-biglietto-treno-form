@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  rgb(194, 0, 90);;
+}
+
+h2{
+    color: white;
+}
+
+
+.d-flex{
+    display: flex;
+}
+/* / utility class */
+
+.container{
+    background-color: white;
+    justify-content: center;
+    filter: drop-shadow(1px 4px 4px black); 
+    border-radius: 5px;
+}
+
+.row{
+    height: 100px;
+    align-items: center;
+    color: rgb(194, 0, 90);
+}
+
+.row:first-child{
+    justify-content: space-evenly;
+}
+
+.row:nth-child(2){
+    justify-content: center;
+}
+
+.row .col input, select{
+    border-radius: 5px;
+    border: 1px solid rgb(156, 2, 156);
+}
+
+.row .col select{
+    padding: 2px;
+}
+
+.row .col button{
+    margin: 10px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding: 2px;
+    background-color: lightgrey;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.row .col button:focus{
+    outline: 0px;
+    border-radius: 5px;
+    border: 2px solid rgb(156, 2, 156);
+}
+
+/* /dati */
+table{
+    height: 200px;
+    padding: 10px;
+}
+
+thead{
+    background-color: grey;
+    color: black;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+tbody{
+    border-top: 1px solid grey ;
+    border-bottom: 1px solid grey;
+}
+td{
+    padding: 10px 50px;
+}
+
+tbody tr:first-child{
+    color: black;
+    font-weight: 700;
+    font-size: 2rem;
+}

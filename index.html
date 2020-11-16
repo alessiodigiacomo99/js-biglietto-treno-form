@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+       <main id="main_content">
+           <section id="dati">
+
+               <h2 class="text-uppercase text-center">calcola il prezzo del tuo biglietto</h2>
+
+               <div class="container">
+
+                   <div class="row d-flex">
+                       <div class="col">
+                           <h5 class="text-capitalize">nome cognome</h5>
+                           <input type="text">
+                       </div>
+    
+                       <div class="col">
+                           <h5>Km da percorrere</h5>
+                           <input class="text-center" type="number">
+                       </div>
+    
+                       <div class="col">
+                           <h5>Fascia d'età</h5>
+                           <select class="text-capitalize" name="" id="">
+                               <option value="">minorenne</option>
+                               <option value="">maggiorenne</option>
+                               <option value="">over 65</option>
+                           </select>
+                       </div>
+    
+                   </div>
+    
+                   <div class="d-flex row">
+                       <div class="col">
+                           <button class="text-capitalize">genera</button>
+                       </div>
+    
+                       <div class="col">
+                           <button class="text-capitalize">annulla</button>
+                       </div>
+    
+                   </div>
+
+                </div>
+
+           </section>
+           <!-- /#dati -->
+
+           <section id="biglietto">
+                <h2 class="text-uppercase text-center">il tuo biglietto</h2>
+                <div class="container">
+                    <h4 class="text-uppercase">dettaglio passeggeri</h4>
+                    <table class="d-flex">
+                        <thead>
+                            <tr>
+                                <td>Nome passeggero</td>
+                            </tr>
+                            <tr>
+                                <td id="userName"></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Offerta</td>
+                                <td>Carrozza</td>
+                                <td>Codice CP</td>
+                                <td>Costo biglietto</td>
+                            </tr>
+                            <tr>
+                                <td id="offerta"></td>
+                                <td id="carrozza"></td>
+                                <td id="codiceCp"></td>
+                                <td id="costo"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+           </section>
+           <!-- /biglietto -->
+       </main>
+        
+
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
