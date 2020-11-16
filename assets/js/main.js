@@ -18,14 +18,14 @@ genera.addEventListener("click", function(){
     //if costo e offerta biglietto
     if (range == "minorenne"){
         var costoMinori = costoBase - ((costoBase * 20) / 100);
-        document.getElementById("costo").innerHTML = costoMinori.toFixed(2);
+        document.getElementById("costo").innerHTML = costoMinori.toFixed(2) + " €";
         document.getElementById("offerta").innerHTML = "Sconto minorenni";
     }else if (range == "over 65"){
         var costoAnziani = costoBase - ((costoBase * 40) / 100);
-        document.getElementById("costo").innerHTML = costoAnziani.toFixed(2);
+        document.getElementById("costo").innerHTML = costoAnziani .toFixed(2) + " €";
         document.getElementById("offerta").innerHTML = "Sconto anziani";
     }else{
-        document.getElementById("costo").innerHTML = costoBase.toFixed(2);
+        document.getElementById("costo").innerHTML = costoBase.toFixed(2) + " €";
         document.getElementById("offerta").innerHTML = "Nessuno sconto";
     }
 
