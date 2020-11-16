@@ -18,20 +18,20 @@
                    <div class="row d-flex">
                        <div class="col">
                            <h5 class="text-capitalize">nome cognome</h5>
-                           <input type="text">
+                           <input type="text" class="text-center text-capitalize" id="nomeCognome">
                        </div>
     
                        <div class="col">
                            <h5>Km da percorrere</h5>
-                           <input class="text-center" type="number">
+                           <input class="text-center" type="number" id="chilometri">
                        </div>
     
                        <div class="col">
                            <h5>Fascia d'età</h5>
-                           <select class="text-capitalize" name="" id="">
-                               <option value="">minorenne</option>
-                               <option value="">maggiorenne</option>
-                               <option value="">over 65</option>
+                           <select class="text-capitalize" name="range" id="range">
+                               <option value="minorenne">minorenne</option>
+                               <option value="maggiorenne">maggiorenne</option>
+                               <option value="over 65">over 65</option>
                            </select>
                        </div>
     
@@ -39,11 +39,11 @@
     
                    <div class="d-flex row">
                        <div class="col">
-                           <button class="text-capitalize">genera</button>
+                           <button class="text-capitalize" id="genera">genera</button>
                        </div>
     
                        <div class="col">
-                           <button class="text-capitalize">annulla</button>
+                           <button class="text-capitalize" id="annulla">annulla</button>
                        </div>
     
                    </div>
@@ -63,7 +63,7 @@
                                 <td>Nome passeggero</td>
                             </tr>
                             <tr>
-                                <td id="userName"></td>
+                                <td id="userName" class="text-capitalize"></td>
                             </tr>
                         </thead>
                         <tbody>

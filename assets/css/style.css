@@ -42,6 +42,8 @@ h2{
 .row .col input, select{
     border-radius: 5px;
     border: 1px solid rgb(156, 2, 156);
+    outline: 0;
+    color: black;
 }
 
 .row .col select{
@@ -65,6 +67,15 @@ h2{
 }
 
 /* /dati */
+/* #biglietto{
+    display: none;
+} */
+h4{
+    color: black;
+    font-weight: 700;
+    padding: 0 10px;
+}
+
 table{
     height: 200px;
     padding: 10px;
@@ -75,14 +86,23 @@ thead{
     color: black;
     font-weight: 700;
     font-size: 2rem;
+    padding: 0 5px;
+}
+
+#userName{
+    font-weight: 800;
+    font-size: 2rem;
 }
 
 tbody{
     border-top: 1px solid grey ;
     border-bottom: 1px solid grey;
+    width: 100%;
 }
-td{
-    padding: 10px 50px;
+
+tbody tr td{
+    padding: 10px 20px;
+    text-align: center;
 }
 
 tbody tr:first-child{
